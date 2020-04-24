@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/intro/intro2.unity
+    guid: f4bfdeee885df7c4ebde6b5742f8196f
+  - enabled: 1
+    path: Assets/Scenes/intro/intro.unity
+    guid: 03fa91fb87b668b49a6adcc4c99f98e9
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro.unity
+    guid: 49ae033d455741e41baed7843c12f16c
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro2.unity
+    guid: 341b92730b43a644584e39a493025a21
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro3.unity
+    guid: da1878a35658c7a428c72d7ea32a1264
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro4.unity
+    guid: cce1fd1e1b5477948a5179f46b92779c
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro5.unity
+    guid: dd0c5119d72dca042ac96008fb76893f
+  - enabled: 1
+    path: Assets/Scenes/Story/Story Intro/StoryIntro6.unity
+    guid: fe0fc947737268d4385283145ecbbbe3
+  - enabled: 1
+    path: Assets/Scenes/Story/boss level.unity
+    guid: 33b1f78aab666e64c8f1e626aa4fdb2c
+  - enabled: 1
+    path: Assets/Scenes/Story/End Credits.unity
+    guid: 03188c8d89e482b4b875a3d5d1708e46
+  - enabled: 1
+    path: Assets/Scenes/Story/EndBossFr1.unity
+    guid: b2c579d0e272c46448e6c9f47a7f2521
+  - enabled: 1
+    path: Assets/Scenes/Story/EndBossFr2.unity
+    guid: bca3e2fcefa13f740aea0af0eebc9ad9
+  - enabled: 1
+    path: Assets/Scenes/Story/EndBossFr3.unity
+    guid: 453d4b1b381f16b46804dc9ba5ddb74a
+  - enabled: 1
+    path: Assets/Scenes/Story/EndBossFr4.unity
+    guid: 977746ca3df8039419ce5ac384d02be5
+  - enabled: 1
+    path: Assets/Scenes/Story/EndBossFr5.unity
+    guid: 1620cdb6358c8bb45880812f0e4ea6b9
+  - enabled: 1
+    path: Assets/Scenes/Story/level01.unity
+    guid: 77b96948f725f8f47a415bffbde6126f
+  - enabled: 1
+    path: Assets/Scenes/Story/level02.unity
+    guid: a877e03442dc28a459c3807041006d03
+  - enabled: 1
+    path: Assets/Scenes/Story/level03.unity
+    guid: 4ac2e5e7718844f44b863419d9383ed0
+  - enabled: 1
+    path: Assets/Scenes/Level01Selection.unity
+    guid: dbf6bbaba83d24a4cab1a1c9faf37f14
+  - enabled: 1
+    path: Assets/Scenes/Level02Selection.unity
+    guid: bf7cfd6b0f588cf4da1f49aef01ee377
+  - enabled: 1
+    path: Assets/Scenes/Level03Selection.unity
+    guid: c7cf2728a59af8e4095fbd8e0233018d
+  - enabled: 1
+    path: Assets/Scenes/levelSelection.unity
+    guid: d17b6329661b9cd4f85c3e4caac59ee3
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 16eb3040ad072854fa18fc102ebb9557
+  m_configObjects: {}
