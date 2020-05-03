@@ -5,58 +5,53 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
+    public GameObject dBox;
+    public Text dText;
 
-    private Queue<string> sentences;
+    public bool dialogAcive;
 
-    public Animator animator;
+    public string[] dialogLines;
+    public int currentLine;
 
-    // Start is called before the first frame update
+    private Top_Down_Movement player;
+
     void Start()
     {
-        sentences = new Queue<string>();
+        player = FindObjectOfType<Top_Down_Movement>();
     }
 
-    public void StartDialog(Dialog dialog)
+    void Update()
     {
-        animator.SetBool("IsOpen", true);
-
-        nameText.text = dialog.name;
-
-        foreach(string sentence in dialog.sentences)
+        if(dialogAcive && Input.GetKeyDown(KeyCode.Space))
         {
-            sentences.Enqueue(sentence);
+            //dBox.SetActive(false);
+            //dialogAcive = false;
+            currentLine++;
         }
 
-        DisplaynextSentence();
-    }
-
-    public void DisplaynextSentence()
-    {
-        if(sentences.Count == 0)
+        if(currentLine >= dialogLines.Length)
         {
-            EndDialog();
-            return;
-        }
+            dBox.SetActive(false);
+            dialogAcive = false;
 
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+            currentLine = 0;
+            //player.canMove = true;
+        }
+        dText.text = dialogLines[currentLine];
     }
 
-    IEnumerator TypeSentence(string sentence)
+    public void ShowBox(string dialogue)
     {
-        dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return null;
-        }
+        dialogAcive = true;
+        dBox.SetActive(true);
+        dText.text = dialogue;
     }
 
-    void EndDialog()
+    public void ShowDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        dialogAcive = true;
+        dBox.SetActive(true);
+        //player.canMove = false;
+
     }
 }

@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splashImage: {fileID: 229825049}
-  loadLevel: level01
+  loadLevel: topDownPlatform
 --- !u!1 &751154099
 GameObject:
   m_ObjectHideFlags: 0

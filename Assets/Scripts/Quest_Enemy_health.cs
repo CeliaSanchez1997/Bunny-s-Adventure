@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_health : MonoBehaviour
+public class Quest_Enemy_health : MonoBehaviour
 {
     public string enemyQuestName;
     private QuestManager theQM;
